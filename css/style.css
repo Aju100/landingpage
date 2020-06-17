@@ -180,6 +180,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    /*   border: 1px solid red;*/
+    box-sizing: border-box;
+  }
+
   .header-content h2 {
     font-size: 10px;
   }
@@ -187,6 +192,8 @@ footer {
   .intro-content {
     display: block;
     height: 90vh;
+    width: 100vw;
+    padding: 0 20px;
   }
 
   .intro-content div {
@@ -195,6 +202,8 @@ footer {
 
   .services {
     height: 100vh;
+    width: 100vw;
+    padding: 0 20px;
     clip-path: polygon(
       0 0,
       15% 0,
@@ -208,6 +217,7 @@ footer {
   }
 
   .service-content {
+    padding-top: 100px;
     display: block;
     margin-top: -15vh;
     padding-top: 1px;
